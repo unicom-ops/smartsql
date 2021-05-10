@@ -62,7 +62,7 @@ docker run -itd -p [宿主机Port]:[容器Port] -e PRIMARY_DB=[数据库地址] 
 
 # 示例
 docker run -itd -p 8090:8090 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 smartsql:0.0.1
-
+```
 
 
 ## 启动网关服务
@@ -72,8 +72,6 @@ docker run -itd -p [宿主机Port]:[容器Port] -e PRIMARY_DB=[数据库地址] 
 
 # 示例
 docker run -itd -p 19528:19528 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 -e SQL_BACKEND=10.253.9.213:18090 ops-gateway:0.0.1
-```
-
 
 ```
 
