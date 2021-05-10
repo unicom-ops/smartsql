@@ -16,7 +16,7 @@ docker pull redis
 docker run --name some-redis -p 6379:6379 -d redis redis-server --appendonly yes
 ```
 
-ps: redis的详细安装，可以参考[redis的官网](https://hub.docker.com/_/redis/)
+ps: redis详细安装，可以参考[redis的官网](https://hub.docker.com/_/redis/)
 
 # Mysql的安装
 
