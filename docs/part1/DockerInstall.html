@@ -415,15 +415,11 @@ docker run -itd -p [&#x5BBF;&#x4E3B;&#x673A;Port]:[&#x5BB9;&#x5668;Port] -e PRIM
 
 # &#x793A;&#x4F8B;
 docker run -itd -p 8090:8090 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 smartsql:0.0.1
+</code></pre><h2 id="&#x542F;&#x52A8;&#x7F51;&#x5173;&#x670D;&#x52A1;">&#x542F;&#x52A8;&#x7F51;&#x5173;&#x670D;&#x52A1;</h2>
+<pre><code>docker run -itd -p [&#x5BBF;&#x4E3B;&#x673A;Port]:[&#x5BB9;&#x5668;Port] -e PRIMARY_DB=[&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;] -e PRIMARY_DB_USERNAME=[&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;] -e PRIMARY_DB_PASSWORD=[&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;] -e REDIS_HOST=[redis&#x7684;IP] -e REDIS_PORT=[redis&#x7684;&#x7AEF;&#x53E3;] -e SQL_BACKEND=[SQL&#x5BA1;&#x6838;&#x670D;&#x52A1;&#x5730;&#x5740;] ${&#x955C;&#x50CF;} 
 
-
-
-## &#x542F;&#x52A8;&#x7F51;&#x5173;&#x670D;&#x52A1;
-</code></pre><p>docker run -itd -p [&#x5BBF;&#x4E3B;&#x673A;Port]:[&#x5BB9;&#x5668;Port] -e PRIMARY_DB=[&#x6570;&#x636E;&#x5E93;&#x5730;&#x5740;] -e PRIMARY_DB_USERNAME=[&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;] -e PRIMARY_DB_PASSWORD=[&#x6570;&#x636E;&#x5E93;&#x5BC6;&#x7801;] -e REDIS_HOST=[redis&#x7684;IP] -e REDIS_PORT=[redis&#x7684;&#x7AEF;&#x53E3;] -e SQL_BACKEND=[SQL&#x5BA1;&#x6838;&#x670D;&#x52A1;&#x5730;&#x5740;] ${&#x955C;&#x50CF;} </p>
-<h1 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h1>
-<p>docker run -itd -p 19528:19528 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 -e SQL_BACKEND=10.253.9.213:18090 ops-gateway:0.0.1</p>
-<pre><code>
-
+# &#x793A;&#x4F8B;
+docker run -itd -p 19528:19528 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 -e SQL_BACKEND=10.253.9.213:18090 ops-gateway:0.0.1
 </code></pre><h2 id="&#x542F;&#x52A8;&#x524D;&#x7AEF;&#x670D;&#x52A1;">&#x542F;&#x52A8;&#x524D;&#x7AEF;&#x670D;&#x52A1;</h2>
 <pre><code>docker run -itd -p [&#x5BBF;&#x4E3B;&#x673A;Port]:[&#x5BB9;&#x5668;Port] -e GATEWAY_HOST=[&#x7F51;&#x5173;IP] -e GATEWAY_PORT=[&#x7F51;&#x5173;&#x7AEF;&#x53E3;] ${&#x955C;&#x50CF;} 
 
@@ -472,7 +468,7 @@ docker run -itd -p 8081:8081 -e GATEWAY_HOST=10.253.9.213 -e GATEWAY_PORT=19528 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"容器化安装","level":"1.2.5","depth":2,"next":{"title":"快速开始","level":"1.2.6","depth":2,"path":"part1/QuickStart.md","ref":"part1/QuickStart.md","articles":[]},"previous":{"title":"非容器化安装","level":"1.2.4","depth":2,"path":"part1/Install.md","ref":"part1/Install.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/DockerInstall.md","mtime":"2021-05-10T03:35:42.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-10T03:40:44.179Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"容器化安装","level":"1.2.5","depth":2,"next":{"title":"快速开始","level":"1.2.6","depth":2,"path":"part1/QuickStart.md","ref":"part1/QuickStart.md","articles":[]},"previous":{"title":"非容器化安装","level":"1.2.4","depth":2,"path":"part1/Install.md","ref":"part1/Install.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1/DockerInstall.md","mtime":"2021-05-10T06:32:09.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-10T06:33:08.956Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
