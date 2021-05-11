@@ -1,12 +1,5 @@
 # 简介
 
-<<<<<<< HEAD
-一款SQL审核工具
-
-正在建设中...
-
-详情查看[https://unicom-ops.github.io/smartsql/](https://unicom-ops.github.io/smartsql/)
-=======
 详情[https://unicom-ops.github.io/smartsql/part1/DockerInstall.html](https://unicom-ops.github.io/smartsql/part1/DockerInstall.html)
 
 **SmartSQL**是一款支持动态的智能化SQL语句审核平台。提供动态执行分析检查与SQL文本分析等多种功能。
@@ -51,4 +44,3 @@
 # 定制化
 
 敬请期待
->>>>>>> 5765367c3a86f1feec6e139e5571b4dbf9a8ccad
