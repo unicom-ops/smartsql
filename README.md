@@ -14,29 +14,29 @@
 
 ### 容器化安装
 
-[容器化安装](part1/DockerInstall.md)
+[容器化安装](gitbook/part1/DockerInstall.md)
 ### 非容器化安装
 
-[非容器化安装](part1/Install.md)
+[非容器化安装](gitbook/part1/Install.md)
 
 
 ## 快速开始
 
-[快速开始](part1/QuickStart.md)
+[快速开始](gitbook/part1/QuickStart.md)
 
 ## 功能点介绍
 
-[功能点介绍](part1/Function.md)
+[功能点介绍](gitbook/part1/Function.md)
 ## 架构设计
 
-[架构设计](part1/Architecture.md)
+[架构设计](gitbook/part1/Architecture.md)
 ## 数据库设计
 
-[数据库设计](part1/DataBase.md)
+[数据库设计](gitbook/part1/DataBase.md)
 
 ## 常见问题解决
 
-[常见问题解决](part1/issue.md)
+[常见问题解决](gitbook/part1/issue.md)
 # 集群版
 
 敬请期待
