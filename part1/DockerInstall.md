@@ -54,7 +54,7 @@ docker pull docker.io/lightops/ops-ui:0.0.1
 docker pull docker.io/lightops/ops-gateway:0.0.1
 
 # 拉取SQL审核服务镜像
-docker pull docker.io/lightops/smartsql:0.0.1
+docker pull docker.io/lightops/smart-sql:0.0.1
 ```
 
 ## 启动审核服务
@@ -64,7 +64,7 @@ docker pull docker.io/lightops/smartsql:0.0.1
 docker run -itd -p [宿主机Port]:[容器Port] -e PRIMARY_DB=[数据库地址] -e PRIMARY_DB_USERNAME=[数据库用户名] -e PRIMARY_DB_PASSWORD=[数据库密码] -e REDIS_HOST=[redis的IP] -e REDIS_PORT=[redis的端口] ${镜像} 
 
 # 示例
-docker run -itd -p 8090:8090 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 smartsql:0.0.1
+docker run -itd -p 8090:8090 -e PRIMARY_DB=10.253.9.213:33306 -e PRIMARY_DB_USERNAME=root -e PRIMARY_DB_PASSWORD=33306@123 -e REDIS_HOST=10.253.9.213 -e REDIS_PORT=36379 smart-sql:0.0.1
 ```
 
 
