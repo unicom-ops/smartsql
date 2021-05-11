@@ -27,21 +27,21 @@ mysql安装开源单机版，详细安装可以参考[Mysql的官网](https://ww
 
 ## Mysql库初始化
 
-### 创建ops_ui库
+### 1.创建ops_ui库
 ```
 CREATE DATABASE `ops_ui` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 ```
-执行初始化sql脚本 
+### 2.执行初始化sql脚本 
 
 <a href="sql/dump-ops_ui-202105101124.sql" target="_blank">dump-ops_ui-202105101124.sql下载</a>
 
-### 创建smart_sql库
+### 3.创建smart_sql库
 
 ```
 CREATE DATABASE `smart_sql` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 ```
-执行初始化sql脚本 
+### 4.执行初始化sql脚本 
 <a href="sql/dump-smart_sql-202105101124.sql" target="_blank">dump-smart_sql-202105101124.sql下载</a>
 
 ## 拉取服务镜像
